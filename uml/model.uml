@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_y7VkIJ5YEeOBUuc8TjecXg" name="Model">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_lrmW8J5ZEeOBUuc8TjecXg" name="Customer"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_v8CsAJ5ZEeOBUuc8TjecXg" name="Search flights"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_wSxxAJ5ZEeOBUuc8TjecXg" name="Submit list of selected tickets"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_2opG4J5ZEeOBUuc8TjecXg" name="Book tickets">
+    <include xmi:id="_6qpcYJ5cEeOBUuc8TjecXg" addition="_7-LLsJ5aEeOBUuc8TjecXg"/>
+    <include xmi:id="_7DsOgJ5cEeOBUuc8TjecXg" addition="_wSxxAJ5ZEeOBUuc8TjecXg">
+      <name xsi:nil="true"/>
+    </include>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_7-LLsJ5aEeOBUuc8TjecXg" name="Edit list of selected tickets"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_KHqO4J5bEeOBUuc8TjecXg" name="Association_Customer_to_Search flights" memberEnd="_KHq18J5bEeOBUuc8TjecXg _KHsEEJ5bEeOBUuc8TjecXg">
+    <ownedEnd xmi:id="_KHq18J5bEeOBUuc8TjecXg" type="_lrmW8J5ZEeOBUuc8TjecXg" association="_KHqO4J5bEeOBUuc8TjecXg"/>
+    <ownedEnd xmi:id="_KHsEEJ5bEeOBUuc8TjecXg" type="_v8CsAJ5ZEeOBUuc8TjecXg" association="_KHqO4J5bEeOBUuc8TjecXg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NevfcJ5bEeOBUuc8TjecXg" name="Association_Customer_to_Book tickets" memberEnd="_NewtkJ5bEeOBUuc8TjecXg _NexUoJ5bEeOBUuc8TjecXg">
+    <ownedEnd xmi:id="_NewtkJ5bEeOBUuc8TjecXg" type="_lrmW8J5ZEeOBUuc8TjecXg" association="_NevfcJ5bEeOBUuc8TjecXg"/>
+    <ownedEnd xmi:id="_NexUoJ5bEeOBUuc8TjecXg" type="_2opG4J5ZEeOBUuc8TjecXg" association="_NevfcJ5bEeOBUuc8TjecXg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Mdj50J5cEeOBUuc8TjecXg" name="Administrator"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_W6EqEJ5eEeOBUuc8TjecXg" name="Authorize"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_5IkTsJ5eEeOBUuc8TjecXg" name="Edit timetable">
+    <include xmi:id="_l084gJ5fEeOBUuc8TjecXg" addition="_Usqh4J5fEeOBUuc8TjecXg"/>
+    <include xmi:id="_mOqZAJ5fEeOBUuc8TjecXg" addition="_VDYYwJ5fEeOBUuc8TjecXg"/>
+    <include xmi:id="_mrs6UJ5fEeOBUuc8TjecXg" addition="_VXEJwJ5fEeOBUuc8TjecXg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Gh3QEJ5fEeOBUuc8TjecXg" name="Convert tickets "/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Usqh4J5fEeOBUuc8TjecXg" name="Create flight"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_VDYYwJ5fEeOBUuc8TjecXg" name="Edit flight"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_VXEJwJ5fEeOBUuc8TjecXg" name="Delete flight"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jPggQJ5fEeOBUuc8TjecXg" name="Association_Administrator_to_Authorize" memberEnd="_jPhHUJ5fEeOBUuc8TjecXg _jPhHUZ5fEeOBUuc8TjecXg">
+    <ownedEnd xmi:id="_jPhHUJ5fEeOBUuc8TjecXg" type="_Mdj50J5cEeOBUuc8TjecXg" association="_jPggQJ5fEeOBUuc8TjecXg"/>
+    <ownedEnd xmi:id="_jPhHUZ5fEeOBUuc8TjecXg" type="_W6EqEJ5eEeOBUuc8TjecXg" association="_jPggQJ5fEeOBUuc8TjecXg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jrf4sJ5fEeOBUuc8TjecXg" name="Association_Administrator_to_Edit timetable" memberEnd="_jrf4sZ5fEeOBUuc8TjecXg _jrgfwJ5fEeOBUuc8TjecXg">
+    <ownedEnd xmi:id="_jrf4sZ5fEeOBUuc8TjecXg" type="_Mdj50J5cEeOBUuc8TjecXg" association="_jrf4sJ5fEeOBUuc8TjecXg"/>
+    <ownedEnd xmi:id="_jrgfwJ5fEeOBUuc8TjecXg" type="_5IkTsJ5eEeOBUuc8TjecXg" association="_jrf4sJ5fEeOBUuc8TjecXg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_kF1rUJ5fEeOBUuc8TjecXg" name="Association_Administrator_to_Convert tickets " memberEnd="_kF1rUZ5fEeOBUuc8TjecXg _kF2SYJ5fEeOBUuc8TjecXg">
+    <ownedEnd xmi:id="_kF1rUZ5fEeOBUuc8TjecXg" type="_Mdj50J5cEeOBUuc8TjecXg" association="_kF1rUJ5fEeOBUuc8TjecXg"/>
+    <ownedEnd xmi:id="_kF2SYJ5fEeOBUuc8TjecXg" type="_Gh3QEJ5fEeOBUuc8TjecXg" association="_kF1rUJ5fEeOBUuc8TjecXg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_i9mbcJ5gEeOBUuc8TjecXg" name="Accountant"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_lImTYJ5gEeOBUuc8TjecXg" name="Authorize"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_la7ZgJ5gEeOBUuc8TjecXg" name="Review list of reservations"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_lqp3kJ5gEeOBUuc8TjecXg" name="Set reservation paid status"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6K2lMJ5gEeOBUuc8TjecXg" name="Association_Accountant_to_Authorize" memberEnd="_6K3MQJ5gEeOBUuc8TjecXg _6K3MQZ5gEeOBUuc8TjecXg">
+    <ownedEnd xmi:id="_6K3MQJ5gEeOBUuc8TjecXg" type="_i9mbcJ5gEeOBUuc8TjecXg" association="_6K2lMJ5gEeOBUuc8TjecXg"/>
+    <ownedEnd xmi:id="_6K3MQZ5gEeOBUuc8TjecXg" type="_lImTYJ5gEeOBUuc8TjecXg" association="_6K2lMJ5gEeOBUuc8TjecXg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6nAVsJ5gEeOBUuc8TjecXg" name="Association_Accountant_to_Review list of reservations" memberEnd="_6nA8wJ5gEeOBUuc8TjecXg _6nCK4J5gEeOBUuc8TjecXg">
+    <ownedEnd xmi:id="_6nA8wJ5gEeOBUuc8TjecXg" type="_i9mbcJ5gEeOBUuc8TjecXg" association="_6nAVsJ5gEeOBUuc8TjecXg"/>
+    <ownedEnd xmi:id="_6nCK4J5gEeOBUuc8TjecXg" type="_la7ZgJ5gEeOBUuc8TjecXg" association="_6nAVsJ5gEeOBUuc8TjecXg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7B13kJ5gEeOBUuc8TjecXg" name="Association_Accountant_to_Set reservation paid status" memberEnd="_7B13kZ5gEeOBUuc8TjecXg _7B3FsJ5gEeOBUuc8TjecXg">
+    <ownedEnd xmi:id="_7B13kZ5gEeOBUuc8TjecXg" type="_i9mbcJ5gEeOBUuc8TjecXg" association="_7B13kJ5gEeOBUuc8TjecXg"/>
+    <ownedEnd xmi:id="_7B3FsJ5gEeOBUuc8TjecXg" type="_lqp3kJ5gEeOBUuc8TjecXg" association="_7B13kJ5gEeOBUuc8TjecXg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0picQJ5hEeOBUuc8TjecXg" name="Association_Analytic_to_Authorize" memberEnd="_0picQZ5hEeOBUuc8TjecXg _0picQp5hEeOBUuc8TjecXg">
+    <ownedEnd xmi:id="_0picQZ5hEeOBUuc8TjecXg" association="_0picQJ5hEeOBUuc8TjecXg"/>
+    <ownedEnd xmi:id="_0picQp5hEeOBUuc8TjecXg" association="_0picQJ5hEeOBUuc8TjecXg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_1FFv0J5hEeOBUuc8TjecXg" name="Association_Analytic_to_Review report about sold tickets" memberEnd="_1FGW4J5hEeOBUuc8TjecXg _1FHlAJ5hEeOBUuc8TjecXg">
+    <ownedEnd xmi:id="_1FGW4J5hEeOBUuc8TjecXg" association="_1FFv0J5hEeOBUuc8TjecXg"/>
+    <ownedEnd xmi:id="_1FHlAJ5hEeOBUuc8TjecXg" association="_1FFv0J5hEeOBUuc8TjecXg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_LAnL8J5iEeOBUuc8TjecXg" name="Analytic"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_LPvNEJ5iEeOBUuc8TjecXg" name="Authorize"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_LxiSkJ5iEeOBUuc8TjecXg" name="Review report about sold tickets">
+    <include xmi:id="_dDUjcJ5iEeOBUuc8TjecXg" addition="_L-uaAJ5iEeOBUuc8TjecXg"/>
+    <include xmi:id="_doUG4J5iEeOBUuc8TjecXg" addition="_MMoTIJ5iEeOBUuc8TjecXg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_L-uaAJ5iEeOBUuc8TjecXg" name="Daily data report"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_MMoTIJ5iEeOBUuc8TjecXg" name="Report by destination places"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_cDNKQJ5iEeOBUuc8TjecXg" name="Association_Analytic_to_Authorize" memberEnd="_cDNxUJ5iEeOBUuc8TjecXg _cDNxUZ5iEeOBUuc8TjecXg">
+    <ownedEnd xmi:id="_cDNxUJ5iEeOBUuc8TjecXg" type="_LAnL8J5iEeOBUuc8TjecXg" association="_cDNKQJ5iEeOBUuc8TjecXg"/>
+    <ownedEnd xmi:id="_cDNxUZ5iEeOBUuc8TjecXg" type="_LPvNEJ5iEeOBUuc8TjecXg" association="_cDNKQJ5iEeOBUuc8TjecXg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_caV34J5iEeOBUuc8TjecXg" name="Association_Analytic_to_Review report about sold tickets" memberEnd="_caV34Z5iEeOBUuc8TjecXg _caWe8J5iEeOBUuc8TjecXg">
+    <ownedEnd xmi:id="_caV34Z5iEeOBUuc8TjecXg" type="_LAnL8J5iEeOBUuc8TjecXg" association="_caV34J5iEeOBUuc8TjecXg"/>
+    <ownedEnd xmi:id="_caWe8J5iEeOBUuc8TjecXg" type="_LxiSkJ5iEeOBUuc8TjecXg" association="_caV34J5iEeOBUuc8TjecXg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_-NH14J5iEeOBUuc8TjecXg" name="Security officer"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="__6wcYJ5iEeOBUuc8TjecXg" name="Authorize"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_AJVD4J5jEeOBUuc8TjecXg" name="Edit staff accounts">
+    <include xmi:id="_JhNZQJ5jEeOBUuc8TjecXg" addition="_CH8FoJ5jEeOBUuc8TjecXg"/>
+    <include xmi:id="_J6mJoJ5jEeOBUuc8TjecXg" addition="_CX83kJ5jEeOBUuc8TjecXg"/>
+    <include xmi:id="_KV_FIJ5jEeOBUuc8TjecXg" addition="_CmdNoJ5jEeOBUuc8TjecXg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_CH8FoJ5jEeOBUuc8TjecXg" name="Create account"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_CX83kJ5jEeOBUuc8TjecXg" name="Edit account"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_CmdNoJ5jEeOBUuc8TjecXg" name="Delete account"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_InBB4J5jEeOBUuc8TjecXg" name="Association_Security officer_to_UseCaseModel18" memberEnd="_InBo8J5jEeOBUuc8TjecXg _InBo8Z5jEeOBUuc8TjecXg">
+    <ownedEnd xmi:id="_InBo8J5jEeOBUuc8TjecXg" type="_-NH14J5iEeOBUuc8TjecXg" association="_InBB4J5jEeOBUuc8TjecXg"/>
+    <ownedEnd xmi:id="_InBo8Z5jEeOBUuc8TjecXg" type="__6wcYJ5iEeOBUuc8TjecXg" association="_InBB4J5jEeOBUuc8TjecXg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JIrkgJ5jEeOBUuc8TjecXg" name="Association_Security officer_to_UseCaseModel19" memberEnd="_JIsLkJ5jEeOBUuc8TjecXg _JIun0J5jEeOBUuc8TjecXg">
+    <ownedEnd xmi:id="_JIsLkJ5jEeOBUuc8TjecXg" type="_-NH14J5iEeOBUuc8TjecXg" association="_JIrkgJ5jEeOBUuc8TjecXg"/>
+    <ownedEnd xmi:id="_JIun0J5jEeOBUuc8TjecXg" type="_AJVD4J5jEeOBUuc8TjecXg" association="_JIrkgJ5jEeOBUuc8TjecXg"/>
+  </packagedElement>
+</uml:Model>

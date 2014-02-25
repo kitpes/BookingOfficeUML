@@ -1,6 +1,13 @@
 *.class
 
+*.project
+/.metadata
+/RemoteSystemsTempFiles
+
 # Package Files #
 *.jar
 *.war
 *.ear
+
+
+
